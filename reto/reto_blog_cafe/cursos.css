@@ -1,0 +1,106 @@
+/* Estilos para el hero con imagen */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Asegura que el contenido se vea bien sobre la imagen */
+.contenedor-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+}
+
+.contenido-hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos específicos para la tabla */
+.tabla-cursos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3rem 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tabla-cursos th, 
+.tabla-cursos td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-cursos th {
+    background-color: #5D4037;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-cursos td.precio {
+    color: #388E3C; /* Verde para precios */
+    font-weight: bold;
+}
+
+.tabla-cursos td.cupo {
+    color: #1976D2; /* Azul para cupos */
+    font-weight: bold;
+}
+
+.tabla-cursos img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.boton-tabla {
+    display: inline-block;
+    background-color: #8D6E63;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.boton-tabla:hover {
+    background-color: #5D4037;
+    transform: translateY(-2px);
+}
+
+/* Asegurar que todas las celdas sean visibles */
+.tabla-cursos td {
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabla-cursos {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .tabla-cursos td, 
+    .tabla-cursos th {
+        padding: 0.8rem;
+    }
+    
+    .tabla-cursos img {
+        width: 80px;
+        height: 60px;
+    }
+}

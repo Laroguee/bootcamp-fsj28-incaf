@@ -1,0 +1,237 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fuente general */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url(/reto/reto_blog_cafe/imagenes/banner.jpg); /* Usa tu imagen de fondo aquí */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Encabezado de navegación */
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Navegación */
+  .nav a {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenido centrado */
+  .contenido-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .contenido-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .contenido-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  .blog h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .entrada-blog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  .entrada-blog img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .texto-entrada h3 {
+    margin-top: 1rem;
+  }
+  
+  .texto-entrada p {
+    margin: 1rem 0;
+  }
+  
+  .boton {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .curso {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .curso h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .curso span {
+    font-weight: bold;
+  }
+  
+  /* Media Query para móviles (hasta 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    .contenedor-header {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  
+    .nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .nav a {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  
+    /* Hero */
+    .contenido-hero {
+      padding: 1.5rem;
+    }
+  
+    .contenido-hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contenido-hero p {
+      font-size: 1rem;
+    }
+  
+    /* Contenido principal */
+    .contenido-principal {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    /* Blog */
+    .entrada-blog {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    .entrada-blog img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    /* Sidebar */
+    .sidebar {
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  
+    .curso {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+  
+    /* Botones */
+    .boton {
+      display: block;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    /* Footer (si lo tienes) */
+    footer {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+  
+  /* Ajustes adicionales para pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    .contenido-hero h2 {
+      font-size: 1.3rem;
+    }
+  
+    .nav a {
+      font-size: 0.8rem;
+    }
+  
+    .boton {
+      padding: 0.7rem;
+      font-size: 0.8rem;
+    }
+  }
+
+ 
+

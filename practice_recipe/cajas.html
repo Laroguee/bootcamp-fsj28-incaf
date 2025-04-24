@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<style>
+    /** aplicando estilos */
+    /** cuales son los selectores en css, clases, id, etiqueta, universal, atributo*/
+    *{
+        margin: 0;
+        padding: 0;
+        /*ayuda a que no se colapsen las caja con margin y padding*/
+        box-sizing: border-box;
+    }
+    h1{
+        color: #9a32eb;
+        
+    }
+
+    .title{
+        
+        text-align: center;
+    }
+
+    #title{
+        /** unidad de medidad rem, px,em*/
+        font-size: 3rem; /* rquivale 1 rem=16 px*/
+    }
+    /* atributo*/
+    a[href='#']:hover{
+        color:rgb(112, 135, 218);
+
+    }
+
+    .container article{
+        background-color: #5c1b88;
+        width: 200px;
+        height: 200px;
+        /*  */
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .subtitle{
+        text-align: center;
+    }
+    .container article:nth-child(4){
+        background-color: antiquewhite;
+    }
+
+    #caja3{
+        background-color: aquamarine;
+    }
+
+    .hipervinculo::before{
+        content: " cheese ";
+        
+    }
+
+    #caja1:hover{
+        background-color: aquamarine;
+    }
+
+</style>
+<body>
+    <h1 class="title" id="title">Introducción CSS</h1>
+    <a href="#" class="hipervinculo">click aqui</a>
+    <section class="container">
+        <h2 class="subtitle"> Holaaa</h2>
+        <article id="caja1"></article>
+        <article id="caja2"></article>
+        <article id="caja3">
+            <h2>FSJ28 INCAF</h2>
+        </article>
+    </section>
+
+    <h2 class="subtitle">Holaa</h2>
+    <section>
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+</body>
+</html>
